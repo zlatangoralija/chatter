@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'master_file_extend' => 'layouts.app',
+    'master_file_extend' => 'layouts.forum',
 
     /*
     |--------------------------------------------------------------------------
@@ -123,7 +123,7 @@ return [
 
     'user' => [
         'namespace'                     => 'App\User',
-        'database_field_with_user_name' => 'name',
+        'database_field_with_user_name' => 'full_name',
         'relative_url_to_profile'       => '',
         'relative_url_to_image_assets'  => '',
         'avatar_image_database_field'   => '',
@@ -202,7 +202,7 @@ return [
     'order_by' => [
         'posts' => [
             'order' => 'created_at',
-            'by' => 'ASC'
+            'by' => 'DESC'
         ],
         'discussions' => [
             'order' => 'last_reply_at',
